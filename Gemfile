@@ -31,6 +31,10 @@ gem 'bootstrap-sass', '~> 3.1.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+#Gemfile
+gem 'faker'
+
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
