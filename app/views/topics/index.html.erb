@@ -16,7 +16,8 @@
     <% end %>
   </div>
   <div class="col-md-4">
-    <% if policy(Topic.new).create? %>
+    <!--Are you authorized to create a new topic? If so, show the "New Topic" button-->
+    <% if policy(Topic.new).create? %> 
       <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
     <% end %>
   </div>
