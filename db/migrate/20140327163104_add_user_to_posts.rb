@@ -4,4 +4,3 @@ class AddUserToPosts < ActiveRecord::Migration
     add_index :posts, :user_id
   end
 end
-rails g migration AddUserToPosts user_id:integer
