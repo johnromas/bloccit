@@ -11,7 +11,7 @@
      <%= image_tag(@post.image.thumb.url, class: 'img-rounded') if @post.image? %>
      
      <%= render partial: 'comments/comments', locals: { topic: @topic, post: @post, comment: @comment } %>
-     <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @new_comment } %>
+     <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
   
   </div>
 
