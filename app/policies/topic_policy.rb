@@ -9,6 +9,10 @@ class TopicPolicy < ApplicationPolicy
   end
 
   def update?
-    user.present?
+    create?
+  end
+
+  def destroy?
+    create?
   end
 end
