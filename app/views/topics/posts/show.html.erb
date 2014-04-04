@@ -10,7 +10,7 @@
     </small>
     <p><%= markdown @post.body %></p>
      <%= image_tag(@post.image.thumb.url, class: 'img-rounded') if @post.image? %>
-     
+     <h2 class='js-comments-count'><%= @comments.count %> Comments</h2>
      <%= render partial: 'comments/comment', collection: @comments %>
      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
   

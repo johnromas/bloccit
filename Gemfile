@@ -48,6 +48,7 @@ gem 'will_paginate', '~> 3.0.5'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 

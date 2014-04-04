@@ -3,4 +3,5 @@ class Topic < ActiveRecord::Base
 
   scope :visible_to, ->(user) { user ? scoped : where(public: true) }
 
+
 end
